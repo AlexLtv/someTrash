@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 30px;
+        }
+
+        .area {
+            width: 300px;
+            height: 300px;
+            border: 5px solid red;
+            position: relative;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #000;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        .square {
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="box" id="box1" onclick="alert('11111')"></div>
+    <div class="box" id="box2" onclick="clickHandler()"></div> -->
+    <!-- <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div> -->
+    <!-- <form class="choise"
+          action="post"> -->
+    <p>Please choose</p>
+    <input type="radio"
+           class="choise-squ"
+           name="ch"
+           checked="checked"> Square
+    <br>
+    <input type="radio"
+           class="choise-cir"
+           name="ch"> Circle
+    <br>
+    <input type="radio"
+           class="choise-rec"
+           name="ch"> Rectangle
+    <br>
+    <input type="radio"
+           class="choise-ell"
+           name="ch"> Ellipse
+    <br>
+    <!-- </form> -->
+    <div class="area"
+         id="area"></div>
+
+
+    <script src="Main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.container {
+        width: 1200px;
+        margin: 0 auto;
+        height: 70px;
+}
+
+.logo_img {
+	height: 70px;
+	width: 70px;
+	float: left;
+}
+
+.menu_option {
+	float: left;
+	width: 200px; 
+	top: 15px;
+	text-align: center;
+	line-height: 40px;
+  position: relative;
+  background-color: aqua;
+}
+
+a {
+	text-decoration-line: none;
+	display: block;
+}
+
+.submenu {
+   width: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+     font-weight: bold;
+}
+
+.menu_option:hover {
+	background-color: #f0f11a;
+}
+
+.menu_option:hover .submenu{
+	/* display: block; */
+	visibility: visible;
+	/* opacity: 1; */
+}
+
+.submenu .submenu1:hover {
+	background-color: gold;
+}
+
+.menu_option .submenu{
+	/* display: none; */
+	visibility: hidden;
+	/* opacity: 0; */
+	position: absolute;
+   top: 100%;
+}
+
+
+body {
+    background-image:url('ddzoywgdnkxeizotzfhz.webp');
+    background-size:100%;
+    background-attachment: fixed;
+}
+
+
+
+/* .logotype {
+	float: left;
+	width: 70px;
+} */
+
+
+/* .clearfix{
+    clear: both;
+} */

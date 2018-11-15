@@ -1,291 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Nava</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODOS App</title>
 </head>
+
 <body>
-	<div class="wrap">
 
-	<header class="header">
-		<div class="header__inner">
-			<div class="header__logo">
-				<a href="#" class="logo">
-					<img src="./img/logo.png" alt="" class="logo__img">
-				</a>
-			</div>
-			<div class="header__nav">
-				<nav class="nav">
-					<a href="#" class="nav__link">TOP DESTINATIONS</a>
-					<a href="#" class="nav__link">ADD YOUR BOAT</a>
-				</nav>
-				<a href="#" class="header__btn">sign up</a>
-			</div>
-		</div>
-	</header>
+    <div class="todos" data-module="todos">
+        <div class="todos__add">
+            <div class="add-todo">
+                <input type="text" class="add-todo__field">
+                <button class="add-todo__add-btn">Add Todo</button>
+            </div>
+        </div>
 
-	<section class="intro" style="background-image: url(img/intro-bg.png);">
-		<div class="container">
-			<div class="row">
-				<div class="intro__inner col-10">
-					<div class="intro__text">
-						<h1 class="intro__title">RESERVE A BOAT NOW!</h1>
-						<p class="intro__subtitle">and set your sails into paradise!</p>
-					</div>
-					<form class="inline-form inline-form--intro">
-						<input type="text" class="inline-form__inp">
-						<button class="btn">
-							<svg x="0px" y="0px" viewBox="0 0 474.986 474.986" style="enable-background:new 0 0 474.986 474.986;" xml:space="preserve">
-							<path id="XMLID_3_" d="M440.904,356.937l-15.139-80.104c-0.632-3.32-2.842-6.123-5.93-7.501c-3.081-1.386-6.647-1.163-9.542,0.577  l-69.815,42.086c-4.09,2.464-5.954,7.408-4.514,11.952c1.434,4.552,5.799,7.515,10.559,7.184l27.269-1.902  c-26.037,34.993-65.227,49.355-110.178,53.036V153.103h22.449c3.62,2.695,8.07,4.343,12.929,4.343  c12.021,0,21.771-9.742,21.771-21.764c0-12.029-9.75-21.771-21.771-21.771c-4.867,0-9.318,1.656-12.938,4.351h-22.441V86.789  c12.776-8.494,21.231-22.987,21.231-39.436C284.845,21.247,263.6,0,237.493,0c-26.107,0-47.354,21.247-47.354,47.353  c0,16.449,8.456,30.942,21.231,39.436v31.474h-22.44c-3.62-2.695-8.07-4.351-12.937-4.351c-12.021,0-21.771,9.742-21.771,21.771  c0,12.021,9.75,21.764,21.771,21.764c4.859,0,9.309-1.648,12.929-4.343h22.448v229.162c-44.95-3.681-84.14-18.043-110.176-53.036  l27.269,1.902c4.759,0.331,9.125-2.632,10.558-7.184c1.44-4.543-0.423-9.488-4.513-11.952l-69.816-42.086  c-2.896-1.74-6.461-1.963-9.542-0.577c-3.088,1.378-5.298,4.181-5.93,7.501l-15.14,80.104c-0.886,4.689,1.555,9.372,5.906,11.327  c4.351,1.965,9.472,0.686,12.399-3.088l16.287-21.008c31.843,51.565,81.914,94.736,139.664,105.942l21.854,21.854  c4.036,4.028,10.565,4.028,14.594,0l21.854-21.854c57.75-11.198,107.828-54.377,139.672-105.942l16.287,21.008  c2.927,3.774,8.048,5.053,12.398,3.088C439.349,366.309,441.79,361.626,440.904,356.937z M237.493,34.839  c6.9,0,12.513,5.614,12.513,12.514c0,6.9-5.613,12.514-12.513,12.514c-6.9,0-12.515-5.614-12.515-12.514  C224.979,40.453,230.593,34.839,237.493,34.839z" fill="#FFFFFF"/>
-							</svg>
-							find a boat
-						</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="todos__list"></div>
+    </div>
 
-	<section class="stats">
-		<div class="container">
-			<div class="stats__inner">
-				<div class="stats__item">
-					<div class="stats__item-val">2.300</div>
-					<span class="stats__item-descr">Destinations</span>
-				</div>
-				<div class="stats__item">
-					<div class="stats__item-val">2.300</div>
-					<span class="stats__item-descr">Destinations</span>
-				</div>
-				<div class="stats__item">
-					<div class="stats__item-val">2.300</div>
-					<span class="stats__item-descr">Destinations</span>
-				</div>
-				<div class="stats__item">
-					<div class="stats__item-val">2.300</div>
-					<span class="stats__item-descr">Destinations</span>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="destinations">
-		<div class="container">
-			<div class="section-title">
-				<h3 class="section-title__title">EXPLORE OUR TOP DESTINATIONS</h3>
-				<p class="section-title__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-			</div>
-			<div class="row destinations__items destinations__items--top">
-				<div class="col-8">
-					<div class="destination" style="background-image: url(./img/dest1.png);">
-						<div class="destination__label">730</div>
-						<div class="destination__main">
-							<div class="destination__title">Figueira da Foz</div>
-							<div class="destination__descr">Portugal</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="destination" style="background-image: url(./img/dest1.png);">
-						<div class="destination__label">730</div>
-						<div class="destination__main">
-							<div class="destination__title">Figueira da Foz</div>
-							<div class="destination__descr">Portugal</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="destination" style="background-image: url(./img/dest1.png);">
-						<div class="destination__label">730</div>
-						<div class="destination__main">
-							<div class="destination__title">Figueira da Foz</div>
-							<div class="destination__descr">Portugal</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="destination" style="background-image: url(./img/dest1.png);">
-						<div class="destination__label">730</div>
-						<div class="destination__main">
-							<div class="destination__title">Figueira da Foz</div>
-							<div class="destination__descr">Portugal</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="destination" style="background-image: url(./img/dest1.png);">
-						<div class="destination__label">730</div>
-						<div class="destination__main">
-							<div class="destination__title">Figueira da Foz</div>
-							<div class="destination__descr">Portugal</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="destionations__btn">
-				<a href="#" class="btn-ghost">EXPLORE MORE DESTINATIONS</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="profit" style="background-image: url(./img/profit-bg.jpg);">
-		<div class="container">
-			<div class="profit__main">
-				<h2 class="profit__title">HAVE YOUR OWN BOAT?</h2>
-				<p class="profit__subtitle">navigare necesse est, vivere non est necesse</p>
-			</div>
-			<a href="#" class="btn">Make money with your boat</a>
-		</div>
-	</section>
-
-	<section class="boats">
-		<div class="container">
-			<div class="section-title">
-				<h3 class="section-title__title">EXPLORE OUR TOP DESTINATIONS</h3>
-				<p class="section-title__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-			</div>
-			<div class="row boats__items">
-				<div class="col-6">
-					<div class="boat" style="background-image: url(./img/dest1.png);">
-						<div class="boat__label">€580 / day</div>
-						<div class="boat__main">
-							<div class="boat__title">Figueira da Foz</div>
-							<div class="boat__descr">
-								<div class="boat__descr-item">Gdańsk, Poland </div>
-								<div class="boat__descr-item">8 Berths</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="boat" style="background-image: url(./img/dest1.png);">
-						<div class="boat__label">€580 / day</div>
-						<div class="boat__main">
-							<div class="boat__title">Figueira da Foz</div>
-							<div class="boat__descr">
-								<div class="boat__descr-item">Gdańsk, Poland </div>
-								<div class="boat__descr-item">8 Berths</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="boat" style="background-image: url(./img/dest1.png);">
-						<div class="boat__label">€580 / day</div>
-						<div class="boat__main">
-							<div class="boat__title">Figueira da Foz</div>
-							<div class="boat__descr">
-								<div class="boat__descr-item">Gdańsk, Poland </div>
-								<div class="boat__descr-item">8 Berths</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="boat" style="background-image: url(./img/dest1.png);">
-						<div class="boat__label">€580 / day</div>
-						<div class="boat__main">
-							<div class="boat__title">Figueira da Foz</div>
-							<div class="boat__descr">
-								<div class="boat__descr-item">Gdańsk, Poland </div>
-								<div class="boat__descr-item">8 Berths</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__inner">
-				<div class="footer__col">
-					<div class="footer__title">Contact us</div>
-					<ul class="footer__list">
-						<li class="footer__list-item">
-							<a href="mailto:mail@gmail.com" class="footer__list-link">mail@gmail.com</a>
-						</li>
-						<li class="footer__list-item">
-							<a href="tel:0999035479" class="footer__list-link">+38(099)903-54-79</a>
-						</li>
-						<li class="footer__list-item">
-							<span class="footer__list-link">GVBHJNKJVHBKL 10 345</span>
-						</li>
-						<li class="footer__list-item">
-							<a href="tel:0999035479" class="footer__list-link">+38(099)903-54-79</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__col">
-					<div class="footer__title">Contact us</div>
-					<ul class="footer__list">
-						<li class="footer__list-item">
-							<a href="mailto:mail@gmail.com" class="footer__list-link">mail@gmail.com</a>
-						</li>
-						<li class="footer__list-item">
-							<a href="tel:0999035479" class="footer__list-link">+38(099)903-54-79</a>
-						</li>
-						<li class="footer__list-item">
-							<span class="footer__list-link">GVBHJNKJVHBKL 10 345</span>
-						</li>
-						<li class="footer__list-item">
-							<a href="tel:0999035479" class="footer__list-link">+38(099)903-54-79</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__col-wide">
-					<div class="footer__title">Subscribe</div>
-					<div class="footer__form">
-						<form class="inline-form inline-form--footer">
-							<input type="text" class="inline-form__inp">
-							<button class="btn">subscribe</button>
-						</form>
-					</div>
-					<div class="socials">
-						<a href="##" class="socials__link">
-							<i class="fa fa-facebook"></i>
-						</a>
-						<a href="##" class="socials__link">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a href="##" class="socials__link">
-							<i class="fa fa-linkedin"></i>
-						</a>
-					</div>
-				</div>
-				<div class="footer__col">
-					<div class="footer__title">Contact us</div>
-					<ul class="footer__list">
-						<li class="footer__list-item">
-							<a href="mailto:mail@gmail.com" class="footer__list-link">mail@gmail.com</a>
-						</li>
-						<li class="footer__list-item">
-							<a href="tel:0999035479" class="footer__list-link">+38(099)903-54-79</a>
-						</li>
-						<li class="footer__list-item">
-							<span class="footer__list-link">GVBHJNKJVHBKL 10 345</span>
-						</li>
-						<li class="footer__list-item">
-							<a href="tel:0999035479" class="footer__list-link">+38(099)903-54-79</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<div class="test">
-		<div class="test__box"></div>
-		<div class="test__box2"></div>
-	</div>
-
-	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/todos/add-todo.js"></script>
+    <script src="./js/todos/todos-list.js"></script>
+    <script src="./js/todos/todos.module.js"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
