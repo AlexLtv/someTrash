@@ -1,0 +1,13 @@
+<div class="todo">
+  <div (dblclick)="toEditTodo()">{{todo.title}} - <b>{{todo.completed}}</b></div>
+  <input type="checkbox"
+         [checked]="todo.completed"
+         (change)="onStatusChange()">
+  <span *ngIf="loading">LOADING...</span>
+  <div *ngIf="editing">
+    EDITOR:
+    <input type="text"
+           [(ngModel)]="todo.title">
+    <button (click)="tryToSaveTodo()">Save</button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<!-- <div [formGroup]="newTodo">
+  <input type="text"
+         formControlName="title">
+  <button (click)="onAddingTodo()">Add Todo</button>
+</div> -->
+<div>
+  <input type="text"
+         [(ngModel)]="newTodo.title">
+  <button (click)="onAddingTodo()">Add Todo</button>
+</div>
+<ul>
+  <li *ngFor="let t of todos">
+    <app-todo [todo]="t"></app-todo>
+  </li>
+</ul>
+
+
+<!-- <input type="text"
+       [value]="test"> -->
+
+<!-- <input type="text"
+       [(ngModel)]="test">
+<h2>{{test}}</h2> -->
