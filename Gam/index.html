@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cows and Bulls</title>
+		<meta name="viewport"
+	          content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible"
+	          content="ie=edge">
+		<link rel="stylesheet"  href="ggmain.css">
+	</head>
+<body>
+	<header>
+		<div class="header">
+		     COWS & BULLS
+		</div> 
+	</header>
+	<main>
+		<div class="container">
+			<section class="main__container">
+				<div class="main__rules">
+					<span class="main__rules-title">
+						Rules:
+						</span> 
+					<span class="main__rules-content">
+						При начале игры генерируется случайное, четрыехзначное число (без повторяющихся значений). 
+						<br>
+						Задача - угадать число, после каждой попытки выводится количество совпадений в следующем виде:
+						<br>
+						Корова - угадано число но не его местоположние
+						<br>
+						Бык - угадано число и его положение по порядку
+						<br>
+						Игра заканчивается когда у Вас будет выведено 4 быка ( полное совпадение).
+					</span>
+				</div>
+				<div class="game-start">
+					<button class="btn button__start">Начать игру</button>
+				</div>
+				<div class="game__container">
+						<div class="game__inputanswer">
+							<div class="game__inputanswer-question">
+								Введите Ваш ответ и нажмите ОК:
+							</div>
+							<input type="text" class="input-answer">
+							<button type="submit" class="btn btn__acceptanswer">
+							OK
+							</button>
+						</div>
+						<div class="game_main">
+							<div class="game__result"> 
+							</div>
+							<div class="game__cb">
+								<div class="game_result-cows">
+									<!-- content -->
+								</div>
+								<div class="game_result-bulls">
+									<!-- content -->
+								</div>		
+							</div>
+							<div class="game__try-counter">
+								<!-- Количество попыток		 -->		
+							</div>	
+							<button class="btn btn__newgame">
+								Начать заново
+							</button>
+							<div class="game-win">
+								
+							</div>
+						</div>	
+				</div>
+			</section>
+			<section class="results">
+				<div class="results__previous-try">
+					Предыдущие попытки:
+				</div>
+				<div class="results__value">
+				</div>
+			</section>
+		</div>
+
+
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js" ></script>
+</body>
+</html>
+
+
+
+
